@@ -56,7 +56,7 @@ formula_path = Path(os.environ["FORMULA"])
 sha_dir = os.environ.get("SHA_DIR", "").strip()
 text = formula_path.read_text()
 
-text, n_ver = re.subn(r"(^\s*version\s+\")([^\"]+)(\")", rf"\1{version}\3", text, flags=re.M)
+text, n_ver = re.subn(r"(^\s*version\s+\")([^\"]+)(\")", rf"\g<1>{version}\g<3>", text, flags=re.M)
 if n_ver == 0:
     raise SystemExit("Failed to update version in formula")
 
@@ -98,7 +98,7 @@ if sha_dir:
             if re.match(r"\s*sha256\s+\"[^\"]*\"", lines[j]):
                 lines[j] = re.sub(
                     r"(\s*sha256\s+\")[^\"]*(\")",
-                    rf"\1{sha_map[target]}\2",
+                    rf"\g<1>{sha_map[target]}\g<2>",
                     lines[j],
                 )
                 break
