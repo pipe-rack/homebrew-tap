@@ -1,26 +1,26 @@
 class Piperack < Formula
   desc "Concurrent command runner for developers who value their time"
   homepage "https://github.com/pipe-rack/piperack"
-  version "0.1.4"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.1.4/piperack-v0.1.4-aarch64-apple-darwin.tar.gz"
-      sha256 "36ebdd053f14bc5e5a4bdaf949c59165acc87f1e5e6e4eb58a6d281a41f93ae5"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.0/piperack-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "09cb7e86a1e2aff6076d5cff631ed4ebc7ce2d50152abff18d25c28ac1a588f7"
     else
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.1.4/piperack-v0.1.4-x86_64-apple-darwin.tar.gz"
-      sha256 "a7a78a10a1971962e8cd7e0636ac6940030ffb56ac93047faa85f6bbe5b27c81"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.0/piperack-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ceb39583afa0b37aaa6d945e58cc84ec3a9c0f1c0baba6435fca867d2dfc6984"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.1.4/piperack-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6ee8c62ff8152258736fa79301c4ddcf91c9168f4807902a9330ebe20ff1a9d2"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.0/piperack-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f708f014139d495c6fb0de9216e9545a5d6dc6b61ab7b6c08605c085b29e049d"
     else
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.1.4/piperack-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b957dd41dad55c72a44e6f81c1aa484eff8408ce458cb11fbcad4aef685152ad"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.0/piperack-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "21b5331dde3083757f6e3d454e42d76e3971e80d8a47d0df85ff00c9c5f583b8"
     end
   end
 
