@@ -1,26 +1,26 @@
 class Piperack < Formula
   desc "Concurrent command runner for developers who value their time"
   homepage "https://github.com/pipe-rack/piperack"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.2/piperack-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "e4c002121dd483581dc0863124dcff0c26577782b8a4f542de873fe888a66495"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.3/piperack-v0.2.3-aarch64-apple-darwin.tar.gz"
+      sha256 "a621a9a1d91eafd77fd3afa8ebdc71602bfa049acf1b1b25c2d70294ef31c38c"
     else
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.2/piperack-v0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "450f827f73f8b070c8cba21de4f7c5caa9734d4468f58a0b3fbe70153203a2d5"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.3/piperack-v0.2.3-x86_64-apple-darwin.tar.gz"
+      sha256 "5bcfd72df30102a8e5b243bfd2f6ac6b97872d52e6ed1faac04e10b323422b54"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.2/piperack-v0.2.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "605fcfd142b2abf7ec32894cf97be831bf309159fe7af28897d1f13709d443b7"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.3/piperack-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7d35bf8a6730b1c0b5d731fa8116a34116fa7aa9deeeae7033265d7224c81c0f"
     else
-      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.2/piperack-v0.2.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ae951ef6356c7f57c17e4f87413c1bd4e61d0ef54f9a1cec3e37559433e7705c"
+      url "https://github.com/pipe-rack/piperack/releases/download/v0.2.3/piperack-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c2c599b73e21b49d2e4932c8cc7fb4025bcfdcb990924d5c748c3ab336416371"
     end
   end
 
